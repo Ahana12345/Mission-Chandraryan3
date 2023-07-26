@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More details</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <p style="color: black; font-size: 30px; font-family: fantasy;"> Info </h2>
+        <div class="line"></div>
+    
+    <center>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+        
+            <p class="pageContent">
+             The overall specifications for Chandrayaan-3 is provided below:
+            </p>
+            <table class="table table-info table-striped table-hover table-bordered border-info table-responsive">
+             <tr>
+              <th>
+               Sl No.
+              </th>
+              <th>
+               Parameter
+              </th>
+              <th>
+               Specifications
+              </th>
+             </tr>
+             <tr>
+              <td>
+               1.
+              </td>
+              <td>
+               Mission Life (Lander &amp; Rover)
+              </td>
+              <td>
+               One lunar day (~14 Earth days)
+              </td>
+             </tr>
+             <tr>
+              <td>
+               2.
+              </td>
+              <td>
+               Landing Site (Prime)
+              </td>
+              <td>
+               4 km x 2.4 km
+                                               69.367621 S, 32.348126 E
+              </td>
+             </tr>
+             <tr>
+              <td>
+               3.
+              </td>
+              <td>
+               Science Payloads
+              </td>
+              <td>
+               Lander:
+               <ol>
+                <li>
+                 Radio Anatomy of Moon Bound Hypersensitive ionosphere and Atmosphere (RAMBHA)
+                </li>
+                <li>
+                 Chandra’s Surface Thermo physical Experiment (CHASTE)
+                </li>
+                <li>
+                 Instrument for Lunar Seismic Activity (ILSA)
+                </li>
+                <li>
+                 Laser Retroreflector Array (LRA)
+                                                       Rover:
+                </li>
+                <li>
+                 Alpha Particle X-Ray Spectrometer (APXS)
+                </li>
+                <li>
+                 Laser Induced Breakdown Spectroscope (LIBS)
+                                                       Propulsion Module:
+                </li>
+                <li>
+                 Spectro-polarimetry of HAbitable Planet Earth (SHAPE)
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               4.
+              </td>
+              <td>
+               Two Module Configuration
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Propulsion Module (Carries Lander from launch injection to Lunar orbit)
+                </li>
+                <li>
+                 Lander Module (Rover is accommodated inside the Lander)
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               5.
+              </td>
+              <td>
+               Mass
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Propulsion Module: 2148 kg
+                </li>
+                <li>
+                 Lander Module: 1752 kg including Rover of 26 kg
+                </li>
+                <li>
+                 Total: 3900 kg
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               6.
+              </td>
+              <td>
+               Power generation
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Propulsion Module: 758 W
+                </li>
+                <li>
+                 Lander Module: 738W, WS with Bias
+                </li>
+                <li>
+                 Rover: 50W
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               7.
+              </td>
+              <td>
+               Communication
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Propulsion Module: Communicates with IDSN
+                </li>
+                <li>
+                 Lander Module: Communicates with IDSN and Rover. Chandrayaan-2 Orbiter is also planned for contingency link.
+                </li>
+                <li>
+                 Rover: Communicates only with Lander.
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               8.
+              </td>
+              <td>
+               Lander Sensors
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Laser Inertial Referencing and Accelerometer Package (LIRAP)
+                </li>
+                <li>
+                 Ka-Band Altimeter (KaRA)
+                </li>
+                <li>
+                 Lander Position Detection Camera (LPDC)
+                </li>
+                <li>
+                 LHDAC (Lander Hazard Detection &amp; Avoidance Camera)
+                </li>
+                <li>
+                 Laser Altimeter (LASA)
+                </li>
+                <li>
+                 Laser Doppler Velocimeter (LDV)
+                </li>
+                <li>
+                 Lander Horizontal Velocity Camera (LHVC)
+                </li>
+                <li>
+                 Micro Star sensor
+                </li>
+                <li>
+                 Inclinometer &amp; Touchdown sensors
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               9.
+              </td>
+              <td>
+               Lander Actuators
+              </td>
+              <td>
+               Reaction wheels – 4 nos (10 Nms &amp; 0.1 Nm)
+              </td>
+             </tr>
+             <tr>
+              <td>
+               10.
+              </td>
+              <td>
+               Lander Propulsion System
+              </td>
+              <td>
+               Bi-Propellant Propulsion System (MMH + MON3), 4 nos. of 800 N Throttleable engines &amp; 8 nos. of 58 N; 
+   Throttleable Engine Control Electronics
+              </td>
+             </tr>
+             <tr>
+              <td>
+               11.
+              </td>
+              <td>
+               Lander Mechanisms
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Lander leg
+                </li>
+                <li>
+                 Rover Ramp (Primary &amp; Secondary)
+                </li>
+                <li>
+                 Rover
+                </li>
+                <li>
+                 ILSA, Rambha &amp; Chaste Payloads
+                </li>
+                <li>
+                 Umbilical connector Protection Mechanism,
+                </li>
+                <li>
+                 X- Band Antenna
+                </li>
+               </ol>
+              </td>
+             </tr>
+             <tr>
+              <td>
+               12.
+              </td>
+              <td>
+               Lander Touchdown specifications
+              </td>
+              <td>
+               <ol>
+                <li>
+                 Vertical velocity: ≤ 2 m / sec
+                </li>
+                <li>
+                 Horizontal velocity: ≤ 0.5 m / sec
+                </li>
+                <li>
+                 Slope: ≤ 120
+                </li>
+               </ol>
+              </td>
+             </tr>
+            </table>
+            <p class="pageContent">
+             The objectives of scientific payloads planned on Chandrayaan-3 Lander Module and Rover are provided below:
+            </p>
+            <table class="table table-info table-striped table-hover table-bordered border-info table-responsive">
+             <tr>
+              <th>
+               Sl. No
+              </th>
+              <th>
+               Lander Payloads
+              </th>
+              <th colspan="2">
+               <center>
+                Objectives
+               </center>
+              </th>
+             </tr>
+             <tr>
+              <td>
+               1.
+              </td>
+              <td>
+               Radio Anatomy of Moon Bound Hypersensitive ionosphere and Atmosphere
+              </td>
+              <td>
+               Langmuir probe (LP)
+              </td>
+              <td>
+               To measure the near surface plasma (ions and electrons) density and its changes with time
+              </td>
+             </tr>
+             <tr>
+              <td>
+               2.
+              </td>
+              <td>
+               Chandra’s Surface Thermo physical Experiment (ChaSTE)
+              </td>
+              <td colspan="2">
+               To carry out the measurements of thermal properties of lunar surface near polar region.
+              </td>
+             </tr>
+             <tr>
+              <td>
+               3.
+              </td>
+              <td>
+               Instrument for Lunar Seismic Activity (ILSA)
+              </td>
+              <td colspan="2">
+               To measure seismicity around the landing site and delineating the structure of the lunar crust and mantle.
+              </td>
+             </tr>
+             <tr>
+              <td>
+               4.
+              </td>
+              <td>
+               LASER Retroreflector Array (LRA)
+              </td>
+              <td colspan="2">
+               It is a passive experiment to understand the dynamics of Moon system.
+              </td>
+             </tr>
+            </table>
+            <table class="table table-info table-striped table-hover table-bordered border-info table-responsive">
+             <tr>
+              <th>
+               <center>
+                Sl. No
+               </center>
+              </th>
+              <th>
+               <center>
+                Rover Payloads
+               </center>
+              </th>
+              <th>
+               <center>
+                Objectives
+               </center>
+              </th>
+             </tr>
+             <tr>
+              <td>
+               1.
+              </td>
+              <td>
+               LASER Induced Breakdown Spectroscope (LIBS)
+              </td>
+              <td>
+               Qualitative and quantitative elemental analysis &amp; To derive the chemical Composition and infer mineralogical composition to further our understanding of Lunar-surface.
+              </td>
+             </tr>
+             <tr>
+              <td>
+               2.
+              </td>
+              <td>
+               Alpha Particle X-ray Spectrometer (APXS)
+              </td>
+              <td>
+               To determine the elemental composition (Mg, Al, Si, K, Ca,Ti, Fe) of Lunar soil and rocks around the lunar landing site.
+              </td>
+             </tr>
+            </table>
+            <table class="table table-info table-striped table-hover table-bordered border-info table-responsive">
+             <tr>
+              <th>
+               <center>
+                Sl. No
+               </center>
+              </th>
+              <th>
+               <center>
+                Propulsion Module Payload
+               </center>
+              </th>
+              <th>
+               <center>
+                Objectives
+               </center>
+              </th>
+             </tr>
+             <tr>
+              <td>
+               1.
+              </td>
+              <td>
+               Spectro-polarimetry of Habitable Planet Earth (SHAPE)
+              </td>
+              <td>
+               Future discoveries of smaller planets in reflected light would allow us to probe into variety of Exo-planets which would qualify for habitability (or for presence of life).
+              </td>
+             </tr>
+            </table>
+            <br/>
+           
+           </div>
+    </center>
+    </body>
+</html>
